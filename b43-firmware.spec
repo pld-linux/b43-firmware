@@ -3,10 +3,10 @@ Summary:	Firmware for the Broadcom wireless chipsets
 Name:		b43-firmware
 Version:	4
 Release:	1
-License:	unknown
+License:	Copyrighted by Broadcom Corporation
 Group:		Base/Kernel
-Source0:	http://downloads.openwrt.org/sources/broadcom-wl-4.80.53.0.tar.bz2
-# Source0-md5:	a7d8dde3ce474c361143b83e1d9890b1
+NoSource0:	http://downloads.openwrt.org/sources/broadcom-wl-4.80.53.0.tar.bz2
+# NoSource0-md5:	a7d8dde3ce474c361143b83e1d9890b1
 URL:		http://linuxwireless.org/en/users/Drivers/b43#devicefirmware
 BuildRequires:	b43-fwcutter
 BuildArch:	noarch
