@@ -1,5 +1,5 @@
-Summary:	Firmware for the Broadcom wireless chipsets
-Summary(pl.UTF-8):	Formware dla układów bezprzewodowych Broadcom B43xx
+Summary:	Firmware for the Broadcom 43xx wireless chipsets
+Summary(pl.UTF-8):	Formware dla układów bezprzewodowych Broadcom 43xx
 Name:		b43-firmware
 Version:	4
 Release:	1
@@ -14,11 +14,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This package contains the firmware for the Broadcom B43xx chipsets
+This package contains the firmware for the Broadcom 43xx chipsets
 using b43 driver.
 
 %description -l pl.UTF-8
-Ten pakiet zawiera firmware dla układów bezprzewodowych Broadcom B43xx
+Ten pakiet zawiera firmware dla układów bezprzewodowych Broadcom 43xx
 wykorzystujących sterownik b43.
 
 %prep
