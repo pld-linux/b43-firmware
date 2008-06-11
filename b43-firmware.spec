@@ -1,15 +1,15 @@
 Summary:	Firmware for the Broadcom 43xx wireless chipsets
 Summary(pl.UTF-8):	Formware dla układów bezprzewodowych Broadcom 43xx
 Name:		b43-firmware
-Version:	4
+Version:	4.150.10.5
 Release:	1
 License:	Copyrighted by Broadcom Corporation
 Group:		Base/Kernel
-Source0:	http://downloads.openwrt.org/sources/broadcom-wl-4.80.53.0.tar.bz2
-# NoSource0-md5:	a7d8dde3ce474c361143b83e1d9890b1
+Source0:	http://downloads.openwrt.org/sources/broadcom-wl-%{version}.tar.bz2
+# NoSource0-md5:
 NoSource:	0
 URL:		http://linuxwireless.org/en/users/Drivers/b43#devicefirmware
-BuildRequires:	b43-fwcutter
+BuildRequires:	b43-fwcutter >= 011
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -22,11 +22,11 @@ Ten pakiet zawiera firmware dla układów bezprzewodowych Broadcom 43xx
 wykorzystujących sterownik b43.
 
 %prep
-%setup -q -n broadcom-wl-4.80.53.0
+%setup -q -n broadcom-wl-%{version}
 
 %build
 install -d fw
-%{_bindir}/b43-fwcutter -w fw kmod/*.o
+%{_bindir}/b43-fwcutter -w fw driver/wl_apsta_mimo.o
 
 %install
 rm -rf $RPM_BUILD_ROOT
