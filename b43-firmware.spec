@@ -5,8 +5,8 @@ Version:	4.150.10.5
 Release:	1
 License:	Copyrighted by Broadcom Corporation
 Group:		Base/Kernel
-Source0:	http://downloads.openwrt.org/sources/broadcom-wl-%{version}.tar.bz2
-# NoSource0-md5:
+Source0:	http://mirror2.openwrt.org/sources/broadcom-wl-%{version}.tar.bz2
+# NoSource0-md5:	0c6ba9687114c6b598e8019e262d9a60
 NoSource:	0
 URL:		http://linuxwireless.org/en/users/Drivers/b43#devicefirmware
 BuildRequires:	b43-fwcutter >= 011
