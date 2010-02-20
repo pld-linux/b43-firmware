@@ -1,4 +1,5 @@
 Summary:	Firmware for the Broadcom 43xx wireless chipsets
+Summary(hu.UTF-8):	Broadcom 43xx wireless chipekhez firmware
 Summary(pl.UTF-8):	Formware dla układów bezprzewodowych Broadcom 43xx
 Name:		b43-firmware
 Version:	4.150.10.5
@@ -16,6 +17,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains the firmware for the Broadcom 43xx chipsets
 using b43 driver.
+
+%description -l hu.UTF-8
+Ez a csomag tartalmazza a firmware-t azokhoz a Broadcom 43xx
+chipekhez, amelyek a b43 meghajtót használják.
 
 %description -l pl.UTF-8
 Ten pakiet zawiera firmware dla układów bezprzewodowych Broadcom 43xx
