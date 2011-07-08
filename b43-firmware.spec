@@ -10,7 +10,7 @@ Source0:	http://mirror2.openwrt.org/sources/broadcom-wl-%{version}_mipsel.tar.bz
 # NoSource0-md5:	3363e3a6b3d9d73c49dea870c7834eac	
 NoSource:	0
 URL:		http://linuxwireless.org/en/users/Drivers/b43#devicefirmware
-BuildRequires:	b43-fwcutter >= 011
+BuildRequires:	b43-fwcutter >= 014
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
